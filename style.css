@@ -108,7 +108,7 @@ body {
 }
 
 
-/* .overview {
+.overview {
     background-color: #fff;
     padding: 2rem;
     position: absolute;
@@ -125,13 +125,13 @@ body {
     margin-top: 0;
 }
 
-.card:hover .overview {
+.movie:hover .overview {
     transform: translateY(0);
-} */
+}
 
 
 
-
+/* media-queries */
 @media screen and (max-width:600px) {
     .nav {
         padding: 1rem 0;

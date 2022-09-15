@@ -28,7 +28,7 @@ function showMovies(movies) {
 
 
     movies.forEach((movie) => {
-        const { poster_path, title, vote_average } = movie;
+        const { poster_path, title, vote_average, overview} = movie;
     
         mainEl.innerHTML += `
                 <div class="movie">
@@ -39,7 +39,10 @@ function showMovies(movies) {
                             ${vote_average}
                         </span>
                     </div>
-                    
+                    <div class="overview">
+                        <h3>Overview:</h3>
+                        ${overview}
+                    </div>
                 </div>
             `
             
