@@ -1,11 +1,6 @@
-/* colors
-#373B69
-#83CFDF
-#272532
-#13688C
-#708ED2
-#EBE5E2
-*/
+/* colors : #373B69  #83CFDF  #272532  #13688C  #708ED2  #EBE5E2 */
+
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
@@ -25,6 +20,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 1rem;
 }
 
 #logo {
@@ -42,29 +38,25 @@ body {
     
 }
 
+
 #search:focus {
     background-color: #22254b;
     outline: none;
     color: #708ED2;
 }
 
-.container {
-    background-color: #22254b;
+
+.movie {
     display: flex;
     flex-direction: column;
-    background-size: cover;
-
-}
-
-
-.card {
+    justify-content: center;
     margin: 1rem 2rem;
+    height: 500px;
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-    background-color: #373b69;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -72,26 +64,33 @@ body {
     max-width: 100%;
 }
 
-.description {
+
+.movie-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #708ED2;
-    padding: 0 0.5rem 1rem 1rem;
+    color: #eee;
 }
 
+.movie-info {
+    margin: 0;
+}
 
-#movie-title {
-    color: #fff;
+.movie-info span {
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    background-color: #22254b;
     
+
 }
+
 
 
 
 #main {
     padding: 4rem 0;
-    background-color: #272532;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -101,7 +100,7 @@ body {
 }
 
 
-.overview {
+/* .overview {
     background-color: #fff;
     padding: 2rem;
     position: absolute;
@@ -120,12 +119,18 @@ body {
 
 .card:hover .overview {
     transform: translateY(0);
+} */
+
+
+
+
+@media screen and (max-width:600px) {
+    .nav {
+        padding: 1rem 0;
+        flex-direction: column;
+        /* font-size: 16px; */
+    }
 }
-
-
-
-
-
 
 
 

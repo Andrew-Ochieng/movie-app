@@ -26,23 +26,33 @@ function showMovies(movies) {
     const { poster_path, title, vote_average, overview } = movie;
 
     mainEl.innerHTML += `
-            <div class="card">
-                <img id="image" src="${imgPath + poster_path}"
+            <div class="movie">
+                <img id="image" src="${imgPath + poster_path} "
                 <div class="movie-info">
-                    <h3 id="movie-title">${title}</h3>
+                    <h3>${title}</h3>
                     <span id="vote">
                         ${vote_average}
                     </span>
                 </div>
-                <div class="overview">
-                    <h3>Overview: </h3>
-                    ${overview}
-                </div>
+                
             </div>
         `
         
     });
 }
+
+// const voteColor = document.getElementById('vote').innerHTML
+
+// function changeColor() {
+//     if (voteColor < 7) {
+//         voteColor.style.color = "red"
+//     } else if (voteColor <= 8) {
+//         voteColor.style.color = "orange"
+//     } else {
+//         voteColor.style.color = "green"
+//     }
+// }
+
 
 
 
